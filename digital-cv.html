@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lato:ital,wght@1,300&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <!--Cài đặt Bootstrap 5.0 vào trang Web -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+  crossorigin="anonymous">
+  <title>Project Charter</title>
+</head>
+<style> 
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html{
+  font-family: 'Rubik', sans-serif;
+  line-height: 1.6;
+  margin: 0 auto;
+}
+body{
+    margin: 0 auto;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr;
+  gap: 20px;
+  background-color: blue;
+  padding: 20px;
+  box-shadow: 0px 10px 20px #333;
+}
+
+.grid-item {
+  background-color: rgb(241, 234, 234);
+  text-align:left;
+  padding: 20px;
+  font-size: 30px;
+}
+h2{
+  font-size: 48px;
+  color: blue;
+  font-weight: bolder;
+  border-bottom: 1px solid #333;
+}
+
+.item1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.item2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.item5 {
+  grid-column: 3;
+  grid-row: 1/ span 2;
+}
+p{
+  font-size: 28px;
+}
+.icon{
+  width: 50px;
+  height: 50px;
+}
+.Goals{
+  background-color: rgb(241, 234, 234);
+  padding: 30px;
+}
+.Goals th:first-child{
+    padding-right: 80px;
+}
+.Goals td{
+  border-bottom: 1px solid #333;
+  padding: 20px;
+  width: 100%;
+}
+.Goals th{
+  border-bottom: 1px solid #333;
+}
+.Goals th:last-child{
+    border-bottom: none;
+}
+.Goals{
+  padding: 50px;
+}
+.Team th:first-child{
+    padding-right: 80px;
+}
+.Team{
+  padding: 30px;
+  line-height: 2;
+}
+.Primary th:first-child{
+    padding-right: 80px;
+}
+.Primary td:last-child{
+    padding-bottom: 30px;
+}
+.Primary{
+  padding: 30px;
+}
+.scopes{
+  background-color: rgb(241, 234, 234);
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+.Timeline th:first-child{
+    padding-right: 80px;
+}
+.number{
+  display: inline-block;
+  background-color: #b7b7fa;
+  font-size: 40px;
+  border: 1px solid #333;
+  text-align: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.Timeline td{
+  border-bottom: 1px dotted rgb(118, 198, 235);
+  padding: 20px;
+  width: 100%;
+}
+/* Responsive Tablet */
+@media only screen and (min-width:576px) and (max-width:768px){
+  .grid-container{
+  display: block;
+  }
+ 
+}
+/* Responsive Mobile */
+@media only screen and (max-width:576px){
+  .grid-container{
+    display: block;
+    flex-direction: column;
+    padding: 10px;
+    overflow: hidden;
+  }
+ .grid-item{
+  overflow: hidden;
+  text-align:left;
+  padding: 10px;
+  font-size: 20px;
+ }
+ h2{
+  font-size: 30px;
+ }
+ p{
+  font-size: 20px;
+  }
+  .icon{
+  width: 30px;
+  height: 30px;
+  }
+  
+  .Primary th:first-child{
+      padding-right: 40px;
+  }
+  .Primary td:last-child{
+      padding-bottom: 20px;
+  }
+  .Primary{
+    padding: 30px;
+  }
+  .scopes{
+    background-color: rgb(241, 234, 234);
+    display: block;
+    padding: 20px;
+  }
+  .Goals th:first-child{
+    padding-right: 40px;
+  }
+  .Timeline th:first-child{
+    padding-right: 40px;
+  }
+  .number{
+    font-size: 20px;
+    border: 1px solid #333;
+    text-align: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+
+</style>
+<body style="padding: 20px;">
+  <div class="grid-container">
+    <div class="grid-item item1">
+      <h2>Goals</h2>
+      <table class="Goals">
+        <tr>
+          <th><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5" />
+          </svg></th>
+          <td><strong>Goal 1</strong><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, dolore! Veritatis, illo harum!</td>
+        </tr>
+        <tr>
+          <th><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5" />
+          </svg></th>
+          <td><strong>Goal 2</strong><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, dolore! Veritatis, illo harum!</td>
+        </tr>
+        <tr>
+          <th><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5" />
+          </svg></th>
+          <td><strong>Goal 3</strong><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, dolore! Veritatis, illo harum!</td>
+        </tr>
+      </table>
+    </div>
+      <!-- tung muc -->
+    <div class="grid-item item2">
+      <h2>Team</h2>
+      <table class="Team">
+        <tr>
+          <th>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon">
+              <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
+            </svg>            
+        </th>
+          <td><strong>Member 1</strong><br>Name:...</td>
+        </tr>
+        <tr>
+          <th>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon">
+              <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
+            </svg>            
+        </th>
+          <td><strong>Member 2</strong><br>Name:...</td>
+        </tr>
+        <tr>
+          <th>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon">
+              <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
+            </svg>            
+        </th>
+          <td><strong>Member 3</strong><br>Name:...</td>
+        </tr>
+        <tr>
+          <th>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon">
+              <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
+            </svg>            
+        </th>
+          <td><strong>Member 4</strong><br>Name:...</td>
+        </tr>
+      </table>
+    </div>
+  
+    <!-- tung muc -->
+    <div class="grid-item item3">
+      <h2>Scopes</h2>
+      <div class="scopes">
+        <div class="div">
+          <h3>IN</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Cumque,illum</p><br>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Cumque,illum</p>
+        </div>
+        <div class="div">
+          <h3>OUT</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Cumque,illum</p><br>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Cumque,illum</p>
+        </div>
+      </div>
+    </div> 
+    <!-- tung muc --> 
+    <div class="grid-item item4">
+      <h2>Primary</h2>
+      <table class="Primary">
+        <tr>
+          <th>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon">
+            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm11.378-3.917c-.89-.777-2.366-.777-3.255 0a.75.75 0 01-.988-1.129c1.454-1.272 3.776-1.272 5.23 0 1.513 1.324 1.513 3.518 0 4.842a3.75 3.75 0 01-.837.552c-.676.328-1.028.774-1.028 1.152v.75a.75.75 0 01-1.5 0v-.75c0-1.279 1.06-2.107 1.875-2.502.182-.088.351-.199.503-.331.83-.727.83-1.857 0-2.584zM12 18a.75.75 0 100-1.5.75.75 0 000 1.5z" clip-rule="evenodd" />
+          </svg>          
+          </th>
+          <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.Tenetur,sint?</td>
+        </tr>
+        <tr>
+          <th>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon">
+            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm11.378-3.917c-.89-.777-2.366-.777-3.255 0a.75.75 0 01-.988-1.129c1.454-1.272 3.776-1.272 5.23 0 1.513 1.324 1.513 3.518 0 4.842a3.75 3.75 0 01-.837.552c-.676.328-1.028.774-1.028 1.152v.75a.75.75 0 01-1.5 0v-.75c0-1.279 1.06-2.107 1.875-2.502.182-.088.351-.199.503-.331.83-.727.83-1.857 0-2.584zM12 18a.75.75 0 100-1.5.75.75 0 000 1.5z" clip-rule="evenodd" />
+          </svg>          
+          </th>
+          <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.Tenetur,sint?</td>
+        </tr>
+      </table>
+    </div>
+  
+    <!-- tung muc -->
+    <div class="grid-item item5">
+      <h2>Timeline</h2>
+      <table class="Timeline">
+        <tr>
+          <th>
+          <span class="number">01</span>          
+          </th>
+          <td><strong>Project Start</strong><br>Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+          <th>
+          <span class="number">02</span>          
+          </th>
+          <td><strong>Project Date</strong><br>Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+          <th>
+          <span class="number">03</span>          
+          </th>
+          <td><strong>Project Date</strong><br>Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+          <th>
+          <span class="number">04</span>          
+          </th>
+          <td><strong>Project Date</strong><br>Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+          <th>
+          <span class="number">05</span>          
+          </th>
+          <td><strong>Project Date</strong><br>Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+          <th>
+          <span class="number">06</span>          
+          </th>
+          <td><strong>Project Date</strong><br>Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+          <th>
+          <span class="number">07</span>          
+          </th>
+          <td><strong>Project Date</strong><br>Lorem ipsum dolor sit amet.</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

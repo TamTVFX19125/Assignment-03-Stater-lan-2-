@@ -1,0 +1,163 @@
+@media only screen and (min-width:576px) and (max-width:768px){
+  /* Ảnh đàu trang*/
+  #banner{
+  background-image:linear-gradient( rgba(0,0,0,0.6),rgba(75, 69, 69, 0.6)), url(../images/banner.jpg);
+  background-size: cover;
+  position: relative;
+  height: 30vh;
+  overflow: hidden;
+  text-align: center;
+  color: #fff;
+  }
+  /* Centered text */
+  .name-text{
+  font-size: 10px;
+  font-weight: 300;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+  .name-text p{
+  font-size: 16px;
+  }
+  .flex-container-1 a {
+    display: none;
+  }
+  .anh-ca-nhan{
+    display: none;
+  }
+  .flex-container-2{
+    margin: 10px;
+    padding: 10px;
+}
+  /* Kinh nghiệm-Học vấn-Hoạt động-Sở thích-Ngôn ngữ-Kỹ năng */
+  .container-1{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    justify-content:center;
+    gap: 10px;
+  }
+  .flex-container-2 h2{
+    font-size: 28px;
+  }
+  .grid-item{
+    padding: 30px;
+  }
+  .grid-item i{
+    font-size: 20px;
+    color: gray;
+  }
+  .hobby-btn i{
+    color: #4dabf7;
+    border-radius: 50%;
+    border: 1px solid #4dabf7;
+    padding: 10px;
+}
+  /* Chứng chỉ - Giải thưởng */
+
+  .certificate-award{
+    font-size: 14px;
+    padding: 10px;
+    margin: 10px;
+    gap: 10px;
+  }
+  img{
+  width: 100%;
+  }
+  .Cert_DBI,
+  .Cert_PRF,
+  .Cert_WEB{
+   display: block;
+  }
+  .Cert_PRF{
+    border-left: 2px solid #d6c08d;
+  } 
+  .vach-ngan-cach{
+    display: inline-block;
+    border-top: 2px solid #d6c08d;
+    width: 700px;
+  }
+  .Cert_DBI_text,
+  .Cert_PRF_text,
+  .Cert_WEB_text{
+    margin-top: 20px;
+    padding-left: 10px;
+    line-height: 1.0;
+  }
+  /* .flex-container-3{
+    display:flex;
+    padding-bottom: 30px;
+  } */
+  /* Dự án */
+  .flex-container-3 img{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+  }
+  .bg-grey {
+      background: #f7f7f7;
+  }
+  .DU-AN-1,
+  .DU-AN-2,
+  .DU-AN-3{
+      line-height: 1.5;
+      border:1px solid #ccc;
+  }
+
+  .CV-CA-NHAN span{
+    display: inline-block;
+    background-color: #4dabf7;
+    text-align: center;
+    width: 60px;
+    height: 32px;
+    padding-top: 5px;
+    border-radius: 15px;
+  }
+  .CV-CA-NHAN i{
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    color: #444;
+  }
+  table tr{
+    display: table-row;
+    vertical-align: top;
+    text-align: left;
+
+  }
+  table th:first-child{
+    width: 100px;
+    padding-left: 10px;
+  }
+
+  table, th, td{
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+  }
+  table{
+    border-collapse:collapse;
+    width: auto;
+    height:220px;
+  }
+  h4{
+    padding: 20px;
+    font-size: 20px;
+    border-bottom:1px solid #ccc;
+  }
+  /* footer" */
+  .footer-icon{
+    list-style: none;
+    text-align: center;
+  }
+  .footer-icon i{
+    font-size: 100%;
+  }
+  .footer-icon li{
+    display: inline-block;
+    font-size: 18px;
+    padding: 20px;
+    padding-left: 0px;
+  }
+
+}
